@@ -127,6 +127,12 @@ header a img {
   height: 40px;
   width: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: var(--transition-smooth);
+}
+
+header a:hover img {
+  filter: brightness(0) invert(1) drop-shadow(0 0 10px var(--accent));
 }
 
 header nav ul {
